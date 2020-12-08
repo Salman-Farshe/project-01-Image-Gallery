@@ -3,7 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden; }
+  overflow: hidden;
+  scroll-behavior: smooth; }
 
 :root {
   --primary-color: #5858d8;
@@ -49,12 +50,13 @@ body {
 header {
   background-color: var(--dark-color);
   color: var(--light-color);
-  opacity: 0.9;
-  z-index: 1;
-  position: sticky;
-  top: 0;
-  left: 0; }
+  opacity: 0.9; }
   header #nav-bar {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
     display: grid;
     grid-template-columns: 5fr 5fr 2fr; }
     header #nav-bar .nav-first {
