@@ -1,8 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    overflow: hidden;
     scroll-behavior: smooth;
 }
 :root{
@@ -52,7 +50,7 @@ a:hover{
     }
 }
 %area{
-    width: 100vw;
+    max-width: 100vw;
     min-height: 100%;
 }
 
@@ -64,51 +62,51 @@ body{
 }
 
 // Navigation section part - 01
-header{
+
+#nav-bar{
     @extend %area;
     background-color: var(--dark-color);
     color: var(--light-color);
     opacity: 0.9;
-    #nav-bar{
-        width: 100%;
-        position: sticky;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        display: grid;
-        grid-template-columns: 5fr 5fr 2fr;
-        .nav-first{
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            h1{
-                margin-left: 1rem;
-                margin-top: 0.8rem;
-                font-size: 1.8rem;
-                color: var(--secondary-color);
-            }
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 5fr 5fr 2fr;
+    .nav-first{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        h1{
+            margin-left: 1rem;
+            margin-top: 0.8rem;
+            font-size: 1.8rem;
+            color: var(--secondary-color);
         }
-        .nav-second, .nav-third{
-            @extend %navbarlist;
-        }
-        .nav-second{
-            justify-content: flex-start;
-        }
-        .nav-third{
-            justify-content: flex-end;
-            ul{
-                li{
-                    a{
-                        border: 1px solid var(--primary-color);
+    }
+    .nav-second, .nav-third{
+        @extend %navbarlist;
+    }
+    .nav-second{
+        justify-content: flex-start;
+    }
+    .nav-third{
+        justify-content: flex-end;
+        ul{
+            li{
+                a.login{
+                    padding: 0.5rem;
+                    color: #21e421;
+                    &:hover{
+                        color: #0afa0a;
                     }
-                    .login{
-                        color: #21e421;
-                        &:hover{
-                            color: #0afa0a;
-                        }
-                    }
-                    .signup{
-                        color: var(--primary-color);
+                }
+                a.signup{
+                    padding: 0.5rem;      
+                    color: var(--primary-color);
+                    &:hover{
+                        color: #0909bb;
                     }
                 }
             }
@@ -117,12 +115,13 @@ header{
 }
 
 // home section part - 02
-#home{
+header{
     .container{
         max-width: 100vw;
         min-height: 100vh;
         background: url('../image/favicon01.jpg') no-repeat center center/cover;
         opacity: 0.9;
+        overflow: hidden;
         h1, p{
             color: var(--light-color);
             text-align: center;

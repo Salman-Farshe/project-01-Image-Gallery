@@ -2,8 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  overflow: hidden;
   scroll-behavior: smooth; }
 
 :root {
@@ -22,24 +20,24 @@ a:hover {
   width: 90px;
   height: 60px; }
 
-header #nav-bar .nav-second ul, header #nav-bar .nav-third ul {
+#nav-bar .nav-second ul, #nav-bar .nav-third ul {
   display: flex;
   flex-direction: row;
   margin: 0;
   padding: 0; }
-  header #nav-bar .nav-second ul li, header #nav-bar .nav-third ul li {
+  #nav-bar .nav-second ul li, #nav-bar .nav-third ul li {
     list-style: none;
     margin-top: 0.8rem; }
-    header #nav-bar .nav-second ul li a, header #nav-bar .nav-third ul li a {
+    #nav-bar .nav-second ul li a, #nav-bar .nav-third ul li a {
       color: var(--light-color);
       font-size: 1.3rem;
       padding: 1rem;
       margin: auto; }
-      header #nav-bar .nav-second ul li a:hover, header #nav-bar .nav-third ul li a:hover {
+      #nav-bar .nav-second ul li a:hover, #nav-bar .nav-third ul li a:hover {
         color: var(--secondary-color); }
 
-header {
-  width: 100vw;
+#nav-bar {
+  max-width: 100vw;
   min-height: 100%; }
 
 html,
@@ -47,57 +45,58 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.3; }
 
-header {
+#nav-bar {
   background-color: var(--dark-color);
   color: var(--light-color);
-  opacity: 0.9; }
-  header #nav-bar {
-    width: 100%;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    display: grid;
-    grid-template-columns: 5fr 5fr 2fr; }
-    header #nav-bar .nav-first {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start; }
-      header #nav-bar .nav-first h1 {
-        margin-left: 1rem;
-        margin-top: 0.8rem;
-        font-size: 1.8rem;
-        color: var(--secondary-color); }
-    header #nav-bar .nav-second {
-      justify-content: flex-start; }
-    header #nav-bar .nav-third {
-      justify-content: flex-end; }
-      header #nav-bar .nav-third ul li a {
-        border: 1px solid var(--primary-color); }
-      header #nav-bar .nav-third ul li .login {
-        color: #21e421; }
-        header #nav-bar .nav-third ul li .login:hover {
-          color: #0afa0a; }
-      header #nav-bar .nav-third ul li .signup {
-        color: var(--primary-color); }
+  opacity: 0.9;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 5fr 5fr 2fr; }
+  #nav-bar .nav-first {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; }
+    #nav-bar .nav-first h1 {
+      margin-left: 1rem;
+      margin-top: 0.8rem;
+      font-size: 1.8rem;
+      color: var(--secondary-color); }
+  #nav-bar .nav-second {
+    justify-content: flex-start; }
+  #nav-bar .nav-third {
+    justify-content: flex-end; }
+    #nav-bar .nav-third ul li a.login {
+      padding: 0.5rem;
+      color: #21e421; }
+      #nav-bar .nav-third ul li a.login:hover {
+        color: #0afa0a; }
+    #nav-bar .nav-third ul li a.signup {
+      padding: 0.5rem;
+      color: var(--primary-color); }
+      #nav-bar .nav-third ul li a.signup:hover {
+        color: #0909bb; }
 
-#home .container {
+header .container {
   max-width: 100vw;
   min-height: 100vh;
   background: url("../image/favicon01.jpg") no-repeat center center/cover;
-  opacity: 0.9; }
-  #home .container h1, #home .container p {
+  opacity: 0.9;
+  overflow: hidden; }
+  header .container h1, header .container p {
     color: var(--light-color);
     text-align: center; }
-  #home .container h1 {
+  header .container h1 {
     margin-top: 5rem; }
-    #home .container h1 span {
+    header .container h1 span {
       color: var(--light-color); }
-  #home .container p {
+  header .container p {
     font-size: 1.2rem;
     padding: 1rem;
     margin-bottom: 5rem; }
-  #home .container .button-home {
+  header .container .button-home {
     text-align: center;
     padding: 1rem;
     margin-top: 10rem; }
