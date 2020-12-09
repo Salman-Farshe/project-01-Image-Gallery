@@ -224,3 +224,126 @@ header{
         }
     }
 }
+// blog section part - 05
+#blog{
+    .container{
+        max-width: 100vw;
+        min-height: 100vh;
+        overflow: hidden;
+        h1,p{
+            text-align: center;
+            letter-spacing: 0.2rem;
+        }
+        h1{
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 2rem;
+        }
+        // history section
+        .history{
+            max-width: 90vw;
+            min-height: 100%;
+            margin: 3rem auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            border: 1px solid var(--primary-color);
+            text-align: center;
+            .one, .two, .three, .four{
+                font-weight: bold;
+                padding: 1rem;
+                margin: 2rem auto;
+                h3{
+                    color: var(--secondary-color);
+                }
+            }
+        }
+        // upload section
+        .upload{
+            max-width: 100vw;
+            min-height: 100%;
+            h2{
+                text-align: center;
+                font-weight: bold;
+                margin-top: 5rem;
+                letter-spacing: 0.1rem;
+            }
+            p{
+                text-align: center;
+                font-weight: normal;
+                letter-spacing: 0.1rem;
+            }
+            .loading{
+                padding: 2rem;
+                margin: 1rem auto;
+                .progress{
+                    max-width: 50vw;
+                    min-height: 100%;
+                    margin: auto;
+                }
+            }
+            .my_file{
+                text-align: center;
+                max-width: 20vw;
+                min-height: 100%;
+                margin: auto;
+                font-weight: bold;
+                font-size: 1.5rem;
+                .btn{
+                    background-color: var(--primary-color);
+                    color: #ffffff;
+                    border-radius: 1.2rem;
+                    padding-top: 1rem;
+                    cursor: pointer;
+                    input{
+                        display: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        // customers section
+        .customers{
+            max-width: 100vw;
+            min-height: 100%;
+            margin: auto;
+            h1{
+                text-align: center;
+                margin: 4rem auto;
+                color: var(--primary-color);
+            }
+            .card-columns{
+                max-width: 80vw;
+                min-height: 100%;
+                margin: 2rem auto;
+                .card{
+                    background-color: var(--light-color);
+                    .card-body{
+                        text-align: center;
+                        border: 1px solid var(--secondary-color);
+                    }
+                    .customer-one, .customer-two, 
+                    .customer-three, .customer-four, 
+                    .customer-five, .customer-six{
+                        img{
+                            
+                            display: block;
+                            border-radius: 50%;
+                            margin: 0rem auto;
+                        }
+                        .lead-c{
+                            text-align: left;
+                            letter-spacing: 0rem;
+                            font-weight: normal;
+                            font-style: normal;
+                            padding: 1rem;
+                            margin: 2rem auto;
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

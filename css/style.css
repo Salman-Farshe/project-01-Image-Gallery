@@ -160,3 +160,99 @@ header .container {
           margin-top: 1.5rem; }
         #pricing .container .card-columns .card .card-footer {
           opacity: 0.5; }
+
+#blog .container {
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden; }
+  #blog .container h1, #blog .container p {
+    text-align: center;
+    letter-spacing: 0.2rem; }
+  #blog .container h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 2rem; }
+  #blog .container .history {
+    max-width: 90vw;
+    min-height: 100%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    border: 1px solid var(--primary-color);
+    text-align: center; }
+    #blog .container .history .one, #blog .container .history .two, #blog .container .history .three, #blog .container .history .four {
+      font-weight: bold;
+      padding: 1rem;
+      margin: 2rem auto; }
+      #blog .container .history .one h3, #blog .container .history .two h3, #blog .container .history .three h3, #blog .container .history .four h3 {
+        color: var(--secondary-color); }
+  #blog .container .upload {
+    max-width: 100vw;
+    min-height: 100%; }
+    #blog .container .upload h2 {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 5rem;
+      letter-spacing: 0.1rem; }
+    #blog .container .upload p {
+      text-align: center;
+      font-weight: normal;
+      letter-spacing: 0.1rem; }
+    #blog .container .upload .loading {
+      padding: 2rem;
+      margin: 1rem auto; }
+      #blog .container .upload .loading .progress {
+        max-width: 50vw;
+        min-height: 100%;
+        margin: auto; }
+    #blog .container .upload .my_file {
+      text-align: center;
+      max-width: 20vw;
+      min-height: 100%;
+      margin: auto;
+      font-weight: bold;
+      font-size: 1.5rem; }
+      #blog .container .upload .my_file .btn {
+        background-color: var(--primary-color);
+        color: #ffffff;
+        border-radius: 1.2rem;
+        padding-top: 1rem;
+        cursor: pointer; }
+        #blog .container .upload .my_file .btn input {
+          display: none;
+          cursor: pointer; }
+  #blog .container .customers {
+    max-width: 100vw;
+    min-height: 100%;
+    margin: auto; }
+    #blog .container .customers h1 {
+      text-align: center;
+      margin: 4rem auto;
+      color: var(--primary-color); }
+    #blog .container .customers .card-columns {
+      max-width: 80vw;
+      min-height: 100%;
+      margin: 2rem auto; }
+      #blog .container .customers .card-columns .card {
+        background-color: var(--light-color); }
+        #blog .container .customers .card-columns .card .card-body {
+          text-align: center;
+          border: 1px solid var(--secondary-color); }
+        #blog .container .customers .card-columns .card .customer-one img, #blog .container .customers .card-columns .card .customer-two img,
+        #blog .container .customers .card-columns .card .customer-three img, #blog .container .customers .card-columns .card .customer-four img,
+        #blog .container .customers .card-columns .card .customer-five img, #blog .container .customers .card-columns .card .customer-six img {
+          display: block;
+          border-radius: 50%;
+          margin: 0rem auto; }
+        #blog .container .customers .card-columns .card .customer-one .lead-c, #blog .container .customers .card-columns .card .customer-two .lead-c,
+        #blog .container .customers .card-columns .card .customer-three .lead-c, #blog .container .customers .card-columns .card .customer-four .lead-c,
+        #blog .container .customers .card-columns .card .customer-five .lead-c, #blog .container .customers .card-columns .card .customer-six .lead-c {
+          text-align: left;
+          letter-spacing: 0rem;
+          font-weight: normal;
+          font-style: normal;
+          padding: 1rem;
+          margin: 2rem auto;
+          opacity: 0.7; }
