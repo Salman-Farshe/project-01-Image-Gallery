@@ -256,3 +256,47 @@ header .container {
           padding: 1rem;
           margin: 2rem auto;
           opacity: 0.7; }
+
+#contact .container {
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--light-color);
+  overflow: hidden; }
+  #contact .container h1 {
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin-top: 2.5rem; }
+  #contact .container p {
+    text-align: center;
+    letter-spacing: 0.2rem; }
+  #contact .container form {
+    max-width: 50vw;
+    min-height: 100%;
+    margin: auto; }
+    #contact .container form .form-group label {
+      display: block;
+      font-weight: bold;
+      width: 100%;
+      font-size: 1.2rem;
+      margin-top: 1.5rem; }
+    #contact .container form .form-group input[type="text"], #contact .container form .form-group textarea, #contact .container form .form-group input[type="email"] {
+      display: block;
+      width: 100%;
+      padding: 0.3rem;
+      border: 1px solid var(--secondary-color);
+      border-radius: 0.3rem; }
+      #contact .container form .form-group input[type="text"]:focus, #contact .container form .form-group textarea:focus, #contact .container form .form-group input[type="email"]:focus {
+        border: 1px solid #11db11; }
+    #contact .container form .form-group input[type="submit"] {
+      display: block;
+      margin: 3rem auto;
+      padding: 0.7rem;
+      color: var(--light-color);
+      background-color: var(--primary-color);
+      border-radius: 0.4rem; }
+      #contact .container form .form-group input[type="submit"]:focus {
+        background-color: #0afa0a;
+        color: var(--secondary-color);
+        border-radius: 0.4rem; }
