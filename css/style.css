@@ -127,6 +127,26 @@ header .container {
     padding: 1rem;
     margin-bottom: 5rem; }
 
+#galleries .container {
+  max-width: 100vw;
+  min-height: 100%; }
+  #galleries .container h1 {
+    text-align: center;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-top: 2rem; }
+  #galleries .container p {
+    text-align: center;
+    letter-spacing: 0.2rem;
+    margin-bottom: 5rem; }
+  #galleries .container .row {
+    overflow: hidden; }
+    #galleries .container .row .col {
+      margin: 1rem auto; }
+      #galleries .container .row .col img {
+        width: 300px;
+        height: 300px; }
+
 #pricing {
   background-color: var(--light-color);
   overflow: hidden; }
