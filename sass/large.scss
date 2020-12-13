@@ -1,0 +1,55 @@
+@import './main.scss';
+// home section part - 02
+header{
+    .container{
+        min-height: 70vh;
+        h1{
+            margin-top: 3rem;
+        }
+        p{
+            margin-bottom: 3rem;
+        }
+        .button-home{
+            margin-top: 8rem;
+        }
+    }
+}
+
+// galleries section part - 03
+#galleries{
+    .container{
+        h1{
+            margin-top: 1rem;
+        }
+        p{
+            margin-bottom: 3rem;
+        }
+        .row{
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-auto-flow: column;
+            .col{
+                margin: 0.5rem 0.5rem;
+                & img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
+// pricing section part - 04
+#pricing{
+    .container{
+        min-height: 80vh;
+    }
+}
+
+// contact section part - 06
+#contact{
+    .container{
+        min-height: 80vh;
+    }
+}
