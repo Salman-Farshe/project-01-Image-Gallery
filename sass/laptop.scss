@@ -1,0 +1,44 @@
+@import './main.scss';
+// navbar section
+%navbarlist{
+    ul{
+        & li{
+            & a{
+                padding: 0.5rem;
+            }
+        }
+    }
+}
+
+#nav-bar{
+    .nav-first{
+        h1{
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+// home section part - 02
+header{
+    .container{
+        min-height: 90vh;
+    }
+}
+
+// galleries section part - 03
+#galleries{
+    .container{
+        .row{
+            display: grid;
+            grid-template-columns:auto auto auto auto;
+            grid-auto-flow: row;
+            .col{
+                margin-left: -0.01rem;
+                & img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
