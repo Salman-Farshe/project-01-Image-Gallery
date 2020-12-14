@@ -53,17 +53,12 @@ header{
 // footer section part - 07
 footer{
     .container{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        justify-content: center;
         .f-left, .f-middle, .f-right{
-            align-items: flex-start;
-        }
-        .f-middle{
-            align-self: none;
-            margin-left: 5rem;
-        }
-        .f-right{
-            margin-left: 4rem;
+            margin: 1rem 0rem;
+            padding: 0rem;
         }
     }
 }

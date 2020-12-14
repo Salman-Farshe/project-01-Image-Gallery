@@ -45,3 +45,15 @@
         }
     }
 }
+// footer section part - 07
+footer{
+    .container{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        justify-content: center;
+        .f-left, .f-middle, .f-right{
+            margin: 1rem 0rem;
+            padding: 0rem;
+        }
+    }
+}
