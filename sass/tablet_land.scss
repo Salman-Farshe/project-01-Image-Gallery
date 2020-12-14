@@ -1,0 +1,47 @@
+@import 'main';
+// navigation section
+#nav-bar{
+    grid-template-columns: auto auto auto;
+    .nav-first{
+        h1{
+            display: none;
+        }
+    }
+}
+
+// galleries section part - 03
+#galleries{
+    .container{
+        .row{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            .col{
+                margin-left: 3px;
+                & img{
+                    width: 150px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
+// pricing section part - 04
+#pricing{
+    .container{
+        .card-columns{
+            max-width: 100%;
+        }
+    }
+}
+
+// blog section part - 05
+#blog{
+    .container{
+        .customers{
+            .card-columns{
+                max-width: 95%;
+            }
+        }
+    }
+}

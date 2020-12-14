@@ -341,40 +341,22 @@ footer .container {
     padding: 0rem;
     margin-left: -2rem; }
 
-#nav-bar .nav-second ul li a, #nav-bar .nav-third ul li a {
-  padding: 0.5rem; }
-
-#nav-bar .nav-first h1 {
-  margin-left: 0.5rem; }
-
-header .container {
-  min-height: 70vh; }
-  header .container h1 {
-    margin-top: 3rem; }
-  header .container p {
-    margin-bottom: 3rem; }
-  header .container .button-home {
-    margin-top: 8rem; }
-
-#galleries .container h1 {
-  margin-top: 1rem; }
-
-#galleries .container p {
-  margin-bottom: 3rem; }
+#nav-bar {
+  grid-template-columns: auto auto auto; }
+  #nav-bar .nav-first h1 {
+    display: none; }
 
 #galleries .container .row {
-  max-width: 100%;
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-auto-flow: column; }
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
   #galleries .container .row .col {
-    margin: 0.5rem 0.5rem; }
+    margin-left: 3px; }
     #galleries .container .row .col img {
-      width: 200px;
+      width: 150px;
       height: 200px; }
 
-#pricing .container {
-  min-height: 80vh; }
+#pricing .container .card-columns {
+  max-width: 100%; }
 
-#contact .container {
-  min-height: 80vh; }
+#blog .container .customers .card-columns {
+  max-width: 95%; }

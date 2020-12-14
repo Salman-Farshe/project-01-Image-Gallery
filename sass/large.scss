@@ -1,4 +1,22 @@
 @import './main.scss';
+// navbar section
+%navbarlist{
+    ul{
+        & li{
+            & a{
+                padding: 0.5rem;
+            }
+        }
+    }
+}
+
+#nav-bar{
+    .nav-first{
+        h1{
+            margin-left: 0.5rem;
+        }
+    }
+}
 // home section part - 02
 header{
     .container{
