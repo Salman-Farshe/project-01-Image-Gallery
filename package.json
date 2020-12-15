@@ -4,7 +4,7 @@
   "description": "It's a image gallery project. many images you can get here",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css && node-sass sass/large.scss css/large.css && node-sass sass/laptop.scss css/laptop.css && node-sass sass/tablet_land.scss css/tablet_land.css && node-sass sass/tablet_portait.scss css/tablet_portait.css"
+    "compile:sass": "node-sass sass/main.scss css/style.css && node-sass sass/large.scss css/large.css && node-sass sass/laptop.scss css/laptop.css && node-sass sass/tablet_land.scss css/tablet_land.css && node-sass sass/tablet_portait.scss css/tablet_portait.css && node-sass sass/mobile.scss css/mobile.css"
   },
   "author": "Salman Farshe",
   "license": "ISC",

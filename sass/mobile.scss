@@ -1,0 +1,14 @@
+@import './tablet_portait.scss';
+// galleries section part - 03
+#galleries{
+    .container{
+        .row{
+            .col{
+                & img{
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+        }
+    }
+}
