@@ -1,0 +1,41 @@
+@import './tablet_portait.scss';
+h1{
+    font-size: 1.5rem;
+}
+h2, h3{
+    font-size: 1rem;
+}
+// galleries section part - 03
+#galleries{
+    .container{
+        .row{
+            display: grid;
+            grid-template-columns: auto;
+            .col{
+                margin: 0.5rem auto;
+                & img{
+                    display: block;
+                    margin: auto;
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+#blog{
+    .container{
+        .history{
+            max-width: 100%;
+            min-height: 100%;
+            flex-direction: column;
+            .one, .two, .three, .four{
+                padding: 0rem;
+                margin: 1rem auto;
+            }
+            & i{
+                font-size: 2rem;
+            }
+        }
+    }
+}
