@@ -144,8 +144,8 @@ header .container {
     #galleries .container .row .col {
       margin: 1rem auto; }
       #galleries .container .row .col img {
-        width: 300px;
-        height: 300px; }
+        width: 290px;
+        height: 290px; }
 
 #pricing {
   background-color: var(--light-color);
